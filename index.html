@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang= "pt-br">
+
+
+<head>
+    <meta charset = "UTF-8"/>
+	<title>Revolucionárias</title>
+    <link rel="stylesheet" type="text/css" href="estilo1.css"/>
+	<link rel="shortcut icon" href="imagens/flores.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <div id="logo">
+        <ul><li><a href="index.html"><img id="logotipo" src="imagens/logofinal.png"  alt="imagem"/></a></li></ul>
+    </div>
+	
+	
+    <div id= "interface">
+	
+    <header id= "cabecalho">	 
+    <div id="menu"> 
+       <ul>
+          <li><a href= "index.html" class="botaoMenu">Home</a></li>
+	      <li><a href= "sobre.html" class="botaoMenu">Sobre</a></li>
+	      <li><a href= "curiosidades.html" class="botaoMenu">Curiosidades</a></li>
+          <li><a href= "fotos2.html" class="botaoMenu">Fotos</a></li>
+	      <li><a href= "contato.html" class="botaoMenu">Contato</a></li>
+	   </ul>
+    </div>
+    </header>
+  
+
+<aside id= "esquerda">
+	
+    <div id="sobre">
+       <ul><li><a href= "sobre.html"><img id="botao" src="imagens/soobre.jpg"  alt="imagem"/></a></li></ul>
+    </div>
+	
+	
+	<div id="contato">
+       <ul><li><a href= "contato.html"><img id="botC" src="imagens/contato.jpg"  alt="imagem"/></a></li></ul>
+    </div>
+	
+	
+	<div id="redes"> 
+       <ul>
+          <li><a href="#" title="Instagran" ><img id= "icone" src= "imagens/f1.png"/></a></li>
+	      <li><a href="https://www.facebook.com/profile.php?id=100015028957316" title="Facebook"><img id= "icone" src= "imagens/f2.png"/></a></li>
+	      <li><a href="#" title="Youtube"><img id= "icone" src= "imagens/f3.png"/></a></li>
+	      <li><a href="#" title="Twitter"><img id= "icone" src= "imagens/f4.png"/></a></li>
+	   </ul>
+    </div>
+
+	
+
+</aside>
+
+
+
+
+<section id ="corpo">
+
+    <article id="noticia-principal">
+		
+    <!-- Primeiro slide-->	
+	<figure>
+    <span class="t next"></span>
+    <span class="t prev"></span>
+
+    <div id="slider2">
+      <a class="t"><img  id="imgS" src="imagens/frase1.png" /></a>
+      <a class="t"><img id="imgS" src="imagens/frase2.png" /></a>
+	  <a class="t"><img id="imgS" src="imagens/frase3.png" /></a>
+    </div>
+
+    <figcaption></figcaption>
+    </figure>
+
+<script type="text/javascript">
+function setaImagem(){
+    var settings = {
+        primeiraImg: function(){
+            elemento = document.querySelector("#slider2 a:first-child");
+            elemento.classList.add("ativo");
+            this.legenda(elemento); },
+
+        slide2: function(){
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }},
+
+        proximo: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }
+            intervalo = setInterval(settings.slide2,4000);},
+
+        anterior: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.previousElementSibling){
+                elemento.previousElementSibling.classList.add("ativo");
+                settings.legenda(elemento.previousElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");                     
+                elemento = document.querySelector("a:last-child");
+                elemento.classList.add("ativo");
+                this.legenda(elemento);
+            }
+            intervalo = setInterval(settings.slide2,4000);},
+
+        legenda: function(obj){
+            var legenda = obj.querySelector("img").getAttribute("alt");
+            document.querySelector("figcaption").innerHTML = legenda;
+        }}
+
+    settings.primeiraImg();//chama o slide
+    settings.legenda(elemento); //chama a legenda
+
+    var intervalo = setInterval(settings.slide2,4000);//chama o slide à um determinado tempo
+    document.querySelector(".next").addEventListener("click",settings.proximo,false);
+    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+}
+window.addEventListener("load",setaImagem,false);
+</script><!--Fim da função pro Slide-->
+
+</br></br></br></br></br></br></br></br>
+
+    <img class="ramo1" src= "imagens/imagens-de-flores-png-2.png"/>
+	
+<!--Primeiro texto--->
+    <h2 align="center"> 	&spades;As revolucionárias na Tecnologia e na Ciência	&spades;</h2>
+  	<img class="foto" src= "imagens/mc.png"/></br></br>
+  
+    <p class="texto" > Não podemos pensar na área da tecnologia e da ciência sem a participação feminina, ainda que em menor número. Muitas mulheres revolucionaram o campo científico e tecnológico, mesmo em épocas em que o acesso ao conhecimento eram mais escasso e o preconceito contra as mulheres eram mais virgente e consistente na sociedade. </p>
+    <div id="cLendo"><ul><li><a  href= "revolucionarias.html"/>  &#10048;<b>Continue lendo</b></a></li></ul></div>
+  </br> </br> </br> </br>
+    <img class= "ramo2" src= "imagens/imagens-de-flores-png-2.png"/>
+  
+
+<!--Segundo texto--->
+   <h2 align="center"> 	&spades; Leis Educacionais Brasileiras Importantes para a Mulher ao Longo da História 	&spades;</h2>
+   <img class="foto" src="imagens/ensino-simultc3a2neo.jpg"/>
+  
+    <p class="texto" >Ao longo da história do Brasil, influenciado por costumes patriarcais, as leis referentes aos direitos civis, políticos e educacionais para as mulheres,  foram criados tardiamente. Porém, foi grande a mobilização de feministas para colocar as mulheres em um novo patamar, ou seja, foram muitas lutas para se alcançar principios de igualdade a que temos atualmente.</p>	
+    <div id="cLendo"><ul><li><a  href= "leis.html"/> &#10048; <b>Continue lendo</b></a></li></ul></div>
+   </br> </br> </br> </br>
+    <img class="ramo3" src= "imagens/imagens-de-flores-png-2.png"/>
+  
+  
+<!--Terceiro texto--->
+   <h2 align="center"> 	&spades; Invenções Femininas 	&spades;</h2>
+   <img class= "foto" src= "imagens/invencoes.jpg"/>
+ 
+    <p class="texto" > As invenções sempre são objetos de curiosidades e quase sempre são capazes de melhorar nossas vidas. Dessa forma, muitas vezes queremos saber quem foram os criadores ou as criadoras de tantas coisas que nos beneficiam hoje. Abaixo está uma lista de invenções que foram criadas por mulheres.</p>	
+    <div id="cLendo"><ul><li><a  href= "invencoes.html"/>  &#10048;<b>Continue lendo</b></a></li></ul></div>
+   </br> </br> </br> </br>
+    <img class= "ramo4" src= "imagens/imagens-de-flores-png-2.png"/>
+  
+  
+<!--Quarto texto--->
+   <h2 align="center"> 	&spades; A vida das Mulheres nas Duas Grandes Guerras Mundiais	&spades;</h2>
+   <img class="foto" src="imagens/guerra.png"/>
+ 
+   <p class="texto" > A Primeira (1914-1918) e a Segunda Guerra Mundial (1939-1945), dois dos conflitos mais devastadores da história impactou a vida de várias pessoas em diferentes partes do mundo. A partir desses dois conflitos, com tantos homem nos campos de batalha, recaiu para as mulheres exercerem cargos que antes não podiam, seja na aréa social, industrial ou militar. </p>	
+   <div id="cLendo"><ul><li><a  href= "guerras.html"/>  &#10048; <b>Continue lendo</b></a></li></ul></div>
+   </br> </br> </br> </br>
+   <img class= "ramo5" src= "imagens/imagens-de-flores-png-2.png"/>
+ 
+ 
+<!--Quinto texto--->
+   <h2 align="center"> 	&spades; Moda Feminina ao Longo da História	&spades;</h2>
+   <img class="foto" src="imagens/moda.png"/> 
+  
+   <p class="texto"> A moda é uma forma de identidade que reflete aspectos sociais, geográficos, econômicos e culturais da sociedade e de um determinado período. Mas, históricamente fica evidente que a moda feminina foi composta de muitas regras e restrições a mais do que a moda masculina. Dessa forma, apenas no século 20 que podemos notar uma verdadeira liberdade de moda, influenciadas principalmente pelas grandes guerras e o alcance de direitos femininos.</p>	
+   <div id="cLendo"><ul><li><a  href= "moda1.html"/>  &#10048; <b>Continue lendo </b> </a></li></ul></div>
+   </br> </br> </br> </br>
+   <img class= "ramo6" src= "imagens/imagens-de-flores-png-2.png"/>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   </article>
+   </section>
+   
+   
+  
+  
+<aside id= "direita"> 
+    <form id="divBusca" method="GET" action="http://www.google.com.br/custom"><!-- Inicio do formulário de pesquisa -->
+	<img src="imagens/lupa.png" alt="Pesquisa..."/>
+    <input type="text"  id="txtBusca" placeholder="Pesquisa..." value=""/>
+	<button id="btnBusca">Buscar</button>
+    <input type="hidden" name="domains" value="http://www.seusite.com.br">
+    <input type="hidden" name="sitesearch" value="http://www.seusite.com.br">
+    <input type="hidden" name="cof" value="GALT:#488000;S:http://www.seusite.com.br;VLC:#800080;AH:center;BGC:#FFFFFF;LC:#0000FF;GFNT:#7777CC;L:http://www.seusite.com.br/sualogo.jpg;ALC:#FF0000;T:#000000;GIMP:#FF0000;">
+    </form>  <!-- Fim -->
+	
+	
+	 <form id="novEmail" name="formteste" action="" method="post">
+       <h1>&hearts; Receba Novidades por E-mail &hearts;</h1>
+	   <img id="envelope" src="imagens/envelope.png" />
+       <p class="campo0"> <label for="cNome"><b></b> </br>  </label><input class="news" type="text" name="nome" placeholder="Nome" required="required"></p>
+       <p class="campo2"><b></b> </br> <input class="news" type="email" name="email" placeholder="Email" required="required"></p>
+   
+       <p class="campo3" ><label for="cEst">     <b></b> </label><select name="tEst" id="cEst"></p>
+	    <optgroup label="Região Norte">
+        <option value="AC">Acre</option>
+	    <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+	    <option value="PA">Pará</option>
+	    <option value="RO">Rondônia</option>
+	    <option value="RR">Roraima</option>
+	    <option value="TO">Tocantins</option>
+      </optgroup>
+        <optgroup label="Região Nordeste">
+     <option value="AL">Alagoas</option>  
+     <option value="BA">Bahia</option>	 
+	 <option value="CE">Ceará</option>
+	 <option value="MA">Maranhão</option>
+	 <option value="PB">Paraíba</option>
+	 <option value="PE">Pernambuco</option>
+	 <option value="PI">Piauí</option>
+	 <option value="RN">Rio Grande do Norte</option>
+	 <option value="SE">Sergipe</option>
+     </optgroup>
+	 <optgroup label="Região Centro-Oeste">
+	 <option value="DF">Distrito Federal</option>
+	 <option value="GO">Goiás</option>
+	 <option value="MT">Mato Grosso</option>
+     <option value="MS">Mato Grosso do Sul</option>
+     </optgroup>
+     <optgroup label="Região Sudeste">
+     <option value="ES">Espírito Santo</option>
+	 <option value="MG">Minas Gerais</option>
+     <option value="RJ">Rio de Janeiro</option>
+	 <option value="SP">São Paulo</option>
+     </optgroup>
+     <optgroup label="Região Sul">
+     <option value="PR">Paraná</option>
+     <option value="RS">Rio Grande do Sul</option>
+     <option value="SC">Santa Catarina</option>
+     </optgroup>
+    </select>
+	
+	  <p class="campo4"><label for="cCid"><b></b> </br>  </label><input class="news" type="text" name="nome" placeholder="Cidade" required="required"></p>
+       <p ><input class="envia" type="submit" name="enviar" value="Enviar"></p>
+   </form>
+
+
+
+
+    </br></br>
+
+	
+    <div class="tech-slideshow">
+        <div class="mover-1">   
+ <ul><li><a href= "fotos2.html" title="Acesse a Galeria de Fotos"><img src="imagens/fotosAlbum.png"  alt="imagem" /></a></li></ul>
+		</div>
+    </div>
+	
+   
+
+</aside>
+
+
+    <footer id ="rodape1"><p></p></footer>
+	
+    </div> 
+
+	
+	
+    
+
+<div id ="rodape">
+    
+<div id="f">
+</br></br></br></br></br></br>
+  <form id="NEWLLESTER" name="formteste" action="" method="post">
+       <h1>&hearts; NEWLLESTER &hearts;</h1>
+       <p class="campoN1"> <label for="cNome"><b></b> </br>  </label><input class="news" type="text" name="nome" placeholder="Nome" required="required"></p>
+       <p class="campoN2"><b></b> </br> <input class="news" type="email" name="email" placeholder="Email" required="required"></p>
+       <p ><input class="env" type="submit" name="enviar" value="Enviar"></p>
+   </form>
+</div>
+
+ 
+    <div id="sc">
+    
+        <p><b>Site de Curiosidades</b></p>
+    </div>
+	  <div id="links">
+          </br></br></br>
+       <ul>
+	   <li><a href= "sobre.html" ><b>Sobre</b></a></li>
+	   <li><a href= "curiosidades.html"><b>Curiosidades</b></a></li>
+       <li><a href= "fotos2.html"><b>Fotos</b></a></li>
+	   <li><a href= "contato.html" ><b>Contato</b></a></li>
+	   </ul>
+    </div>
+ 
+ 
+    <div id="rd">
+	
+        <p> <b>Redes Sociais</b> </p>
+    </div>
+   
+    <div id="redes1"> 
+       <ul>
+       <li><a href="#" ><img id= "icone" src= "imagens/f1.png"/></a></li>
+	   <li><a href="https://www.facebook.com/profile.php?id=100015028957316"><img id= "icone" src= "imagens/f2.png"/></a></li>
+	   <li><a href="#"><img id= "icone" src= "imagens/f3.png"/></a></li>
+	   <li><a href="#"><img id= "icone" src= "imagens/f4.png"/></a></li>
+	   </ul>
+    </div>
+
+	
+    <div id="topo"> 
+       <ul>
+       <li><a href="index.html" title="Topo"><img id="top" src= "imagens/topo.png"/></a></li>
+	   </ul>
+    </div>
+
+    <div id="fotoF">
+	   <img  src="imagens/ari.png" />
+    </div>
+</div>
+
+
+    <footer id ="rodape3">
+	
+	    <p><b>Copyright &copy; 2018 - Revolucionárias</b></p>
+    </footer>
+
+</body>
+</html>

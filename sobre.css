@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+body {
+	background-image:url(imagens/bdddc6539d446aaa9594f47a469293fa.jpg);
+	font-family:Gabriola;
+	font-size: 16pt;
+	margin:0px;
+	width:100%;
+}
+
+p{
+	text-align:justify;
+	text-indent:50px; 
+}
+
+div#interface { 
+	width: 1300px; 
+	background-color:white;
+	margin: 8px auto 30px auto; 
+	padding: 20px 30px 0px 30px; 
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+}
+
+
+/* Logotipo*/
+#logotipo{
+	width:270px;
+	left:600px;
+	position:relative;
+	margin-top:-20px;	
+}
+ 
+div#logo li:hover {
+	-webkit-transform: scale(1.1);
+} 
+
+
+/* Formatação do MENU*/
+#menu ul{
+	width: 100%;
+	background-color: Black;
+	list-style: none;  
+	text-align: center;
+	position: absolute;
+	left:0px;
+	top:210px; 	
+}
+
+#menu ul li{
+	display: inline;	
+}
+
+#menu ul li a{
+	padding: 10px 10px;
+	display: inline-block;
+	color: White;
+	text-decoration: none;	
+}
+
+#menu ul li a:hover{
+	color:#C71585;	
+	font-weight:bold;
+}
+
+.botaoMenu{
+	display: block;
+    width: 110px;	
+	font-family: Gabriola;
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+}
+	 
+.botaoMenu:hover	{
+	position: relative;
+	transition: background-color 1s;
+	top:5px;
+	border-color: #000 #999 #999 #000; 
+	background: #FFE4E1;
+}
+
+
+#area{
+    width: 305%;
+    border: 1px solid purple;
+    font-family: verdana;
+}
+
+
+/*Formatação de Cabeçalho*/
+header#cabecalho {
+    height: 200px;
+    background-position: 0px 90px;
+}
+
+ 
+ /*Formatação para a divisão da interface*/
+section#corpo{
+	width:930px;
+	margin-top: 10px;
+	padding: 10px;
+ }
+ 
+section#corpo img#ramo1 { 
+	position: relative;
+    margin: -50px auto 0px auto;
+	left: 380px;  
+	top:60px;
+	width:550px;
+}
+
+article#noticia-principal h2 { /*Artigo*/
+	font-size: 22pt;
+	margin-top:-180px;
+	margin-left:350px;
+	color: #B03060;
+}
+
+.texto{
+	font-family:Verdana, serif; 
+	font-size:11pt;
+	width:930px;
+	margin-left:150px;
+	color: #4F4F4F;
+	text-align: justify;
+	padding:0px 50px 0px 40px;/*margem CIMA, DIREITA, BAIXO e ESQUERDA*/
+}
+
+#tituloC{
+	margin-top:-200px;
+}
+
+.texto1{
+	font-family: verdana;
+	margin-top: -70px;
+	font-family:Verdana, serif; 
+	font-size:11pt;
+	width:550px;
+	color: #4F4F4F;
+	text-align: justify;
+	padding:0px 50px 0px 40px;
+}
+
+ 
+
+/*Formatação para o Rodapé 1*/
+footer#rodape1{
+	clear:both;	
+ }
+ 
+/*Formatação para o Rodapé 3*/
+footer#rodape3{
+	clear:both;
+	height:50px;
+    margin: 0;
+	background-color:#FFF0F5;
+	border: 2px solid #DDA0DD;
+ }
+ 
+footer#rodape3 p{  
+   color:#800080;
+   text-align: center;
+   font-family:verdana;
+   font-size:9pt;
+   margin-top:20px;
+}
+
+
+
+/*SLIDE 1*/
+* {
+	margin: 0; padding: 0;
+	}
+	
+a,img {
+	border: none;
+	}
+
+
+/*Icones das redes sociais no Footer*/
+#redes1 ul{
+	margin-left:920px;
+	margin-top:-140px; 	
+}
+
+#redes1 ul li{
+	display: inline;	
+}
+
+#redes1 ul li a{
+	padding: 5px 5px;
+	color: White;
+	text-decoration: none;	
+}
+
+#redes1 p{
+	margin-left:-120px;
+	top:30px; 
+}
+
+#rd h1{
+	margin-left:980px;
+	margin-top:-250px;
+	font-family:verdana;
+	font-size:10pt;
+}
+
+
+
+/* Formatação do menu no Footer*/
+#links ul{
+	list-style: none; 
+	margin-left:600px;
+	margin-top:20px; 
+}
+
+#links ul li a{
+	font-size:15pt;	
+	color: #006400;
+	text-decoration: none;	
+}
+
+#links ul li a:hover{
+	color:#C71585;	
+	font-weight:bold;
+}
+
+#sc h1{
+	margin-left:570px;
+	margin-top:-10px;
+	font-family:verdana;
+	font-size:10pt;
+}
+
+  
+  
+ /*Topo formatação*/
+#top{
+	width:80px;
+	margin-left:640px;
+	margin-top:20px; 	
+}
+
+#topo ul li a{
+	text-decoration: none;		
+}
+
+#topo li{
+	list-style: none;		
+}
+
+
+/*Icones das redes sociais*/
+#redes ul{
+	position: relative;
+	left:50px;
+	top:-120px; 	
+}
+
+#redes ul li{
+	display: inline;	
+}
+
+#redes ul li a{
+	padding: 5px 5px;
+	color: White;
+	text-decoration: none;	
+}
+
+#icone{
+	width:40px;
+	height:50px;
+    -webkit-filter:hue-rotate(0%);
+}
+
+#icone:hover{
+    -webkit-filter:hue-rotate(304deg);
+    transition: 1s;
+}
+
+
+/*Foto*/
+.foto{
+	width:300px;
+	height:200px;
+	margin-top:-80px;
+	margin-left:500px;
+}
+
+
+
+#fotoF{
+	width:150px;
+	margin-top:-300px;
+	margin-left:1250px;
+}
+
+
+  
+ #rodape{ /*Rodapé com as funcionalidades*/
+	margin-top:200px;
+	width:100%;
+	height:300px;
+	background:url(imagens/pano.jpg);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+}
+  
+  
+  
+  
+  
+  /*Configuração dos FORMULÁRIOS*/
+form{
+	width: 300px;
+	float:left;
+    margin: -110px auto 0px auto;
+	background-color:#EEE0E5;
+	padding:10px;  
+}
+
+form p{
+	color:#8B008B;  	
+}
+
+input, textarea{
+	font-family: Verdana
+        color:purple;;
+	font-weight: normal;
+	font-size: 11pt;
+	background-color: rgba(255,255,255,.8);
+}
+  
+  
+  
+  
+ /*FORMULÁRIO do footer*/
+h1{
+	color:#BA55D3;
+	margin-left:90px;
+	font-size:14pt;	
+}
+
+.news, textarea{
+	width: 200px;
+	padding: 8px;
+	margin-left:-50px;
+}
+
+.enviar .news:hover{
+    background: #078;
+}
+
+
+ #f{
+	font-size: 15px;
+	width: 300px;
+	margin: -110px  120px;
+}
+
+#NEWLLESTER h1{
+	color:#BA55D3;
+	margin-left:70px;
+	font-size:15pt;
+}
+
+#NEWLLESTER{
+     background: url(imagens/flori.jpg);
+	width: 260px;
+	height:200px;
+	padding: 2px;
+	margin-left:-35px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+}
+
+.env {
+	color:#BA55D3;
+	font-size:14pt;
+	font-family:Gabriola;
+	height:30px;
+	width:60px;
+	font-weight: bold;
+	margin-left:120px;
+	margin-top:10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid Purple;
+	cursor: pointer;
+}
+
+.env:hover{
+    background:#D8BFD8;
+}
+
+.campo1{
+	margin-left:72px;
+}
+
+
+
+ /*FORMULÁRIO de Contato*/
+#novEmail{
+	width: 270px;
+	height:450px;
+	padding: 2px;
+	margin-top:100px;
+   
+	margin-left:325px;
+	font-size: 15px;
+	background-color:white;
+}
+
+.envia {
+	color:#BA55D3;
+	font-size:14pt;
+	font-family:Gabriola;
+	height:30px;
+	width:60px;
+	font-weight: bold;
+	margin-left:120px;
+	margin-top:10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid Purple;
+	cursor: pointer;
+}
+
+.envia:hover{
+    background:#D8BFD8;
+}
+
+.campo{
+	margin-left:72px;
+	
+}
+
+.news1:hover{
+    border: 1px solid Pink;
+}
+
+
+.news1{
+	width: 600px;
+	border: 1px solid Purple;
+	padding: 8px;
+	margin-left:-50px;
+}
+
+
+.msg{
+	width: 600px;
+	height:200px;
+	line-height: 20px;
+	border: 1px solid Purple;
+	padding: 8px;
+	margin-left:-50px;
+}
+

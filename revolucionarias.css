@@ -1,0 +1,787 @@
+@charset "UTF-8";
+
+body {
+	background-image:url(imagens/bdddc6539d446aaa9594f47a469293fa.jpg);
+	font-family:Gabriola;
+	font-size: 16pt;
+	margin:0px;
+	width:100%;
+}
+
+p{
+	text-align:justify;
+	text-indent:50px; 
+}
+
+div#interface { 
+	width:87%; 
+	background-color:white;
+	margin: 258px auto 300px auto; 
+	padding: 20px 30px 0px 30px; 
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+}
+
+
+/* Logotipo*/
+#logotipo{
+	width:17%;
+	left:40%;
+	position:absolute;
+	margin-top:-1%;	
+}
+ 
+div#logo li:hover {
+	-webkit-transform: scale(1.1);
+} 
+
+
+/* Formatação do MENU*/
+#menu ul{
+	width: 100%;
+	background-color: Black;
+	list-style: none;  
+	text-align: center;
+	position: absolute;
+	left:0px;
+	top:235px; 	
+}
+
+#menu ul li{
+	display: inline;	
+}
+
+#menu ul li a{
+	padding: 10px 10px;
+	display: inline-block;
+	color: White;
+	text-decoration: none;	
+}
+
+#menu ul li a:hover{
+	color:#C71585;	
+	font-weight:bold;
+}
+
+.botaoMenu{
+	display: block;
+    width: 110px;	
+	font-family: Gabriola;
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+}
+	 
+.botaoMenu:hover	{
+	position: relative;
+	transition: background-color 1s;
+	top:5px;
+	border-color: #000 #999 #999 #000; 
+	background: #FFE4E1;
+}
+
+
+/* Formatação sobre*/
+div#sobre {
+	position: absolute;  
+	top:50%; 
+	height:30%; 
+	padding:1px;
+	color:#006400;
+	width:20%;
+}
+
+div#sobre li {
+	text-decoration:none;
+	color: #FF1493;
+	list-style:none;
+}
+
+#botao{
+	margin-left:10%;
+	width:85%;
+	height:50%;
+	border: 2px solid pink;
+	margin-top:-10%;
+}
+
+
+
+/*Formatação pra CONTATO*/
+div#contato {
+	position: absolute; 
+	top:95%; 
+	height:30%; 
+	padding:1px;
+	color:#006400;
+	width:20%;
+}
+
+div#contato li {
+	text-decoration:none;
+	color: #FF1493;
+	list-style:none;
+}
+
+#botC{
+	margin-left:10%;
+	width:90%;
+	height:50%;
+}
+
+
+
+/*Icones das redes sociais*/
+#redes ul{
+	position: absolute;
+	left:10%;
+	top:140%; 	
+}
+
+#redes ul li{
+	display: inline;	
+}
+
+#redes ul li a{
+	padding: 5px 5px;
+	color: White;
+	text-decoration: none;	
+}
+
+#icone{
+	width:4%;
+	height:50%;
+    -webkit-filter:hue-rotate(0%);
+}
+
+#icone:hover{
+    -webkit-filter:hue-rotate(304deg);
+    transition: 1s;
+}
+
+
+
+
+
+/*Formatação de Cabeçalho*/
+header#cabecalho {
+    height: 200px;
+    background-position: 0px 90px;
+}
+
+ 
+ /*Formatação para a divisão da interface*/
+aside#esquerda{
+	display:block;
+	width: 25%;
+	float:left;
+	background-color:White;
+	padding:10px;
+	margin-top: 10px;
+}
+ 
+aside#esquerda h1{ /*Para arrumar o texto dentro do cabeçalho primeiro título*/
+	font-family: Gabriola; /*tipo de letra*/
+	color: #FFB5C5;
+	font-size: 18pt;
+	text-align: center;
+}
+
+section#corpo{
+    display:block;
+	width:45%;
+	float:left;
+	margin-top: 10px;
+	padding: 10px;
+ }
+ 
+section#corpo img#ramo1 { 
+	position: absolute;
+	left: 35%;  
+	top:55%;
+	width:30%;
+}
+
+
+
+
+ aside#direita{
+	display:block;
+	width: 22%;
+	float:left;
+	height: 750px;
+	background-color:white;
+	padding:10px;
+	margin-right:10px;
+	padding:10px;
+	margin-top:50px;
+ }
+
+
+
+article#noticia-principal h2 { /*Artigo*/
+	font-size: 22pt;
+	color: #B03060;
+}
+
+#titulo{
+	text-align: center;
+	font-size:22pt;
+}
+
+.texto{
+	font-family:Verdana, serif; 
+	font-size:11pt;
+	width:90%;
+	color: #4F4F4F;
+	text-align: justify;
+	padding:0px 50px 0px 40px;/*margem CIMA, DIREITA, BAIXO e ESQUERDA*/
+}
+
+.texto1{
+	font-family: verdana;
+	margin-top: -70px;
+	font-family:Verdana, serif; 
+	font-size:11pt;
+		width:90%;
+	color: #4F4F4F;
+	text-align: justify;
+	padding:0px 50px 0px 40px;/*margem CIMA, DIREITA, BAIXO e ESQUERDA*/
+}
+
+
+
+
+div#filmeLivro{
+	list-style: none; 
+}
+
+p#novidade{
+	font-family:Verdana, serif; 
+	color:#8B0A50; 
+	font-size:11pt;
+	text-align:center;
+}
+
+#fotos{
+	margin-top: 130px;
+	list-style: none;  
+}
+
+
+ 
+
+  
+ 
+/*FORMULÁRIO DE PESQUISA*/
+ #divBusca{
+	position:absolute;
+	margin-top:-15%;
+    left:70%;
+	height:20px;
+	padding:5px;
+	background-color:#F0FFFF;
+	border:3px solid #00FF00;
+    border-radius:10px;
+    width:20%;
+} 
+ 
+#txtBusca{
+	font-family:Gabriola;
+	float:left;
+	background-color:transparent;
+	padding-left:10px; 
+	font-size:18pt;
+	border:none;
+	height:25px;
+    width:200px;
+}
+ 
+#btnBusca{
+	font-family:Gabriola;
+	font-size:16pt;
+	color: white;
+	border:none;
+    position:absolute;
+    left:85%;
+    height:100%;
+    border-radius:0 10px 10px 0;
+    top:0px;
+    width:52px;
+    font-weight:bold;
+    background: #00FF00;
+}
+
+#divBusca img{
+	width:30px;
+	float:left;
+	margin-left:-5px;
+    margin-top:-4px;
+    border-radius:10px 0 0 10px;
+}
+
+ 
+
+/*Formatação para o Rodapé 1*/
+footer#rodape1{
+	clear:both;	
+ }
+ 
+
+
+/*Formatação para o Rodapé 3*/
+footer#rodape3{
+	clear:both;
+	height:50px;
+    margin: 0;
+	position:absolute;
+	width:100%;
+	background-color:#FFF0F5;
+	border: 2px solid #DDA0DD;
+ }
+ 
+footer#rodape3 p {  
+color:#800080;
+   text-align: center;
+   font-family:verdana;
+   font-size:9pt;
+   margin-top:20px;
+   
+}
+
+
+
+/*SLIDE 1*/
+* {margin: 0; padding: 0;}
+a,img {border: none;}
+
+
+
+/*Slide 2*/
+.tech-slideshow {
+	height: 270px;
+	width: 20%;
+	margin: 20px auto;
+	animation-delay: 0s;
+	position: absolute;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover-1 {
+	animation: moveSlideshow 15s infinite;
+}
+
+@keyframes moveSlideshow {
+   100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+.mover-1:nth-child (0){
+	animation-delay: 0s;
+}
+
+.tech-slideshow{
+	margin-top:16%;
+}
+
+
+
+
+/*Slide 3*/
+#container img {
+	position: absolute;
+	top: 160%;
+	margin-left: 2%;
+	width: 10%;
+	height: 30%;
+	opacity: 0;
+	-webkit-animation: opacity 8s linear infinite;
+	-moz-animation: opacity 8s linear infinite;
+	animation: opacity 8s linear infinite;
+}
+
+
+
+@keyframes opacity {
+  5%, 25%  { opacity:1; } 
+  0%, 30%, 100% { opacity:0; }
+}
+
+@-moz-keyframes opacity {
+  5%, 25%  { opacity:1; } 
+  0%, 30%, 100% { opacity:0; }
+}
+
+@-webkit-keyframes opacity {
+  5%, 25%  { opacity:1; }
+  0%, 30%, 100% { opacity:0; }
+}
+
+#container img:nth-child(1) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  animation-delay: 0;
+}
+
+#container img:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+#container img:nth-child(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s
+  animation-delay: 4s;
+}
+
+#container img:nth-child(4) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+#container ul{
+	text-decoration:none;
+	list-style: none;  
+	margin-left: 10%;
+}
+
+
+
+/*Icones das redes sociais no Footer*/
+#redes1 ul{
+	margin-left:55%;
+	width:70%;
+	margin-top:-135px; 	
+}
+
+#redes1 ul li{
+	display: inline;	
+}
+
+#redes1 ul li a{
+	padding: 5px 5px;
+	color: White;
+	text-decoration: none;	
+}
+
+#redes1 p{
+	margin-left:-120px;
+	top:30px; 
+}
+
+
+#rd p{
+	font-family:verdana;
+	font-size:10pt;
+    color: purple;
+}
+
+#rd {
+    position: absolute;
+	margin-left:56%;
+	margin-top:-13.5%;  
+}
+
+
+
+/* Formatação do menu no Footer*/
+#links {
+	  margin-top:-10%;
+	margin-left:40%;
+	
+}
+#links ul{
+	list-style: none;  
+}
+
+#links ul li a{
+	font-size:15pt;	
+	color: #006400;
+	text-decoration: none;	
+}
+
+#links ul li a:hover{
+	color:#C71585;	
+	font-weight:bold;
+}
+
+#sc p{
+	font-family:verdana;
+	font-size:10pt;
+    color: purple;
+}
+
+#sc {
+    position: absolute;
+	margin-left:35%;
+	margin-top:2%;    
+}
+  
+
+
+
+/*Topo formatação*/
+#top{
+	width:5%;
+	margin-left:60%;
+	position:absolute;
+	margin-top:20px; 	
+}
+
+
+#topo ul li a{
+	text-decoration: none;
+list-style: none;		
+}
+
+
+#topo li{
+	
+list-style: none;		
+}
+
+
+
+
+
+
+ /*FORMULÁRIO*/
+ #f{
+
+	font-size: 15px;
+	width: 300px;
+	margin: -110px  120px;
+	
+}
+
+#NEWLLESTER h1{
+	color:#BA55D3;
+	margin-left:70px;
+	font-size:15pt;
+	
+}
+
+#NEWLLESTER{
+    background: url(imagens/flori.jpg);
+    position:absolute;
+    margin-top:-5%;
+	width: 15%;
+	height:20%;
+	padding: 2px;
+	margin-left:1%;
+}
+
+.env {
+	color:#BA55D3;
+	font-size:14pt;
+	font-family:Gabriola;
+    position: absolute;
+	height:30px;
+	width:20%;
+	font-weight: bold;
+	margin-left:60%;
+	margin-top:-65%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid Purple;
+	cursor: pointer;
+}
+
+.env:hover{
+    background:#D8BFD8;
+}
+
+ 
+
+#cEst{
+	width: 220%;
+	
+	line-height: 20px;
+	margin-left:-50%;
+}
+
+
+.campoN1{
+    margin-top: -5%;
+}
+ 
+.campoN2{
+    margin-top: 5%;
+}
+ #NEWLLESTER input{
+    position:absolute;
+	height:15%;
+     margin-left: 12%;
+	
+}
+ 
+ 
+ 
+ 
+ 
+/*FORMULÁRIO de Novidades*/
+form{
+	background-color:#EEE0E5;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	padding:10px;  
+	width: 16%;
+	position:absolute;
+	height:50%;
+	margin-top:-10%;
+	margin-left:19px;
+	font-size: 15px;
+}
+
+form p{
+	color:#8B008B;
+margin-top:180px;	
+}
+
+input, textarea{
+	font-family: Verdana;
+	height:10%;
+	margin:2%;
+	width:-20%;
+	font-weight: normal;
+	position:absolute;
+	font-size: 11pt;
+	background-color: rgba(255,255,255,.8);
+}
+
+
+#envelope{
+	width:25%;
+	margin-left:40%;
+	
+}
+
+
+
+#novEmail h1{
+	color:#BA55D3;
+	margin-left:20px;
+	font-size:15pt;
+	
+}
+
+.news{
+	width:70%;
+	position:absolute;
+	height:8%;
+	margin-left:10%;
+	margin-top:-5%;
+}
+
+.campo0{
+	margin-top:-4%;
+	
+}
+
+.campo2{
+	margin-top:10%;
+	
+}
+
+.campo3{
+	margin-top:15%;
+
+}
+
+.campo4{
+	margin-top:2%;
+}
+.envia {
+	color:#BA55D3;
+	font-size:14pt;
+	font-family:Gabriola;
+	height:30px;
+	position:absolute;
+	width:20%;
+	font-weight: bold;
+	margin-left:42%;
+	margin-top:-50%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid Purple;
+	cursor: pointer;
+}
+
+.envia:hover{
+    background:#D8BFD8;
+}
+
+ 
+
+#cEst{
+	width: 78%;
+	margin-top:-100%;
+	height: 35px;
+	line-height: 20px;
+	margin-left:-9%;
+}
+
+
+.campo{
+	margin-left:72px;
+	
+}
+
+
+
+
+
+
+#rodape{
+	margin-top:-10%;
+	width:100%;
+	
+	height:300px;
+	background:url(imagens/pano.jpg);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+}
+
+
+
+#fotoF img{
+	width:10%;
+	margin-top:-8%;
+	margin-left:80%;}
+
+
+
+/*Fotos das Roupas*/
+.foto{
+	width:60%;
+	height:300px;
+	margin-left:10%;
+}
+
+
+
+
+article#noticia-principal h2 { /*Artigo*/
+	font-size: 22pt;
+	color: #B03060;
+
+}
+
+#tituloC{
+	margin-top:-200px;
+	color: #B03060;
+}
+
+
+
